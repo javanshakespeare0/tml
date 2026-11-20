@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10131d">
+    <title>Velvet Dusk — A Flower in Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-screen" id="login-screen">
+        <div class="login-aurora" aria-hidden="true"></div>
+        <section class="login-card" aria-labelledby="login-title">
+            <svg class="login-mark" viewBox="0 0 64 64" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="1.4">
+                    <ellipse cx="32" cy="19" rx="6.5" ry="12"/>
+                    <ellipse cx="32" cy="45" rx="6.5" ry="12"/>
+                    <ellipse cx="19" cy="32" rx="12" ry="6.5"/>
+                    <ellipse cx="45" cy="32" rx="12" ry="6.5"/>
+                    <ellipse cx="23" cy="23" rx="6.5" ry="12" transform="rotate(-45 23 23)"/>
+                    <ellipse cx="41" cy="23" rx="6.5" ry="12" transform="rotate(45 41 23)"/>
+                    <ellipse cx="23" cy="41" rx="6.5" ry="12" transform="rotate(45 23 41)"/>
+                    <ellipse cx="41" cy="41" rx="6.5" ry="12" transform="rotate(-45 41 41)"/>
+                    <circle cx="32" cy="32" r="4" fill="currentColor" stroke="none"/>
+                </g>
+            </svg>
+            <h1 id="login-title">For you.</h1>
+
+            <form class="login-form" id="login-form" autocomplete="off">
+                <label for="user-name">Your name</label>
+                <input id="user-name" name="user-name" type="text" placeholder="Your name" maxlength="24" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+
+                <button type="submit">See what I got you, baby <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="demo-note" id="demo-note">Demo only. Details aren't sent or saved.</p>
+        </section>
+    </main>
+
+    <main class="scene" id="garden" hidden tabindex="-1">
+        <button class="exit-button" id="exit-garden" type="button" aria-label="Back to sign in">← <span>Back to sign in</span></button>
+        <div class="aurora aurora-one" aria-hidden="true"></div>
+        <div class="aurora aurora-two" aria-hidden="true"></div>
+        <div class="stars" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <header class="title">
+            <p class="eyebrow">WELCOME TO YOUR NIGHT GARDEN</p>
+            <h1 class="user-name" id="display-name">Garden guest</h1>
+            <p class="title-subtitle">A little corner of wonder, grown just for you</p>
+            <span class="title-rule" aria-hidden="true"></span>
+        </header>
+        <aside class="love-note" aria-label="I got you this baby">
+            <p>
+                <span class="love-line">I got you</span>
+                <span class="love-line love-line-second">this baby</span>
+                                    <span class="love-hearts" aria-hidden="true">❤💕</span>
+            </p>
+        </aside>
+        <aside class="promise-note" aria-label="arguments will never find a space again">
+            <p>
+                    <span>arguments will</span>
+                    <span>never find a</span>
+                    <span>space again <span aria-hidden="true">💖🤳</span></span>
+            </p>
+        </aside>
+
+        <svg class="flower" viewBox="0 0 560 860" role="img" aria-labelledby="flower-title flower-description">
+            <title id="flower-title">Your night garden in bloom</title>
+            <desc id="flower-description">Three glowing deep-red flowers bloom among dark green leaves and graceful stems.</desc>
+            <defs>
+                <linearGradient id="stem" x1="0" y1="0" x2="1" y2="1">
+                    <stop stop-color="#779556"/>
+                    <stop offset=".45" stop-color="#315f3d"/>
+                    <stop offset="1" stop-color="#14382f"/>
+                </linearGradient>
+                <linearGradient id="leaf" x1=".15" y1=".1" x2=".85" y2="1">
+                    <stop stop-color="#78975a"/>
+                    <stop offset=".36" stop-color="#315f3e"/>
+                    <stop offset="1" stop-color="#12372f"/>
+                </linearGradient>
+                <linearGradient id="petal-outer" x1=".15" y1="0" x2=".8" y2="1">
+                    <stop stop-color="#d96b78"/>
+                    <stop offset=".22" stop-color="#b32b47"/>
+                    <stop offset=".62" stop-color="#741530"/>
+                    <stop offset="1" stop-color="#381024"/>
+                </linearGradient>
+                <linearGradient id="petal-mid" x1=".12" y1=".05" x2=".9" y2=".92">
+                    <stop stop-color="#f49a8d"/>
+                    <stop offset=".3" stop-color="#d84056"/>
+                    <stop offset=".72" stop-color="#9c1c3b"/>
+                    <stop offset="1" stop-color="#491128"/>
+                </linearGradient>
+                <linearGradient id="petal-inner" x1=".2" y1="0" x2=".7" y2="1">
+                    <stop stop-color="#ffd2b2"/>
+                    <stop offset=".4" stop-color="#de5a65"/>
+                    <stop offset="1" stop-color="#771432"/>
+                </linearGradient>
+                <radialGradient id="heart" cx=".35" cy=".28">
+                    <stop stop-color="#fff2b0"/>
+                    <stop offset=".46" stop-color="#f5c46e"/>
+                    <stop offset="1" stop-color="#b76a48"/>
+                </radialGradient>
+                <radialGradient id="dew" cx=".3" cy=".25">
+                    <stop stop-color="#fff" stop-opacity=".95"/>
+                    <stop offset=".3" stop-color="#d9eee1" stop-opacity=".7"/>
+                    <stop offset="1" stop-color="#8fb5a1" stop-opacity=".14"/>
+                </radialGradient>
+                <filter id="soft-shadow" x="-.4" y="-.4" width="1.8" height="1.8">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="9"/>
+                    <feOffset dy="12"/>
+                    <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+                    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <path id="petal-shape" d="M0 0 C-28-25-94-48-91-111 C-89-153-64-181-34-174 C-4-168 8-126 18-99 C34-56 26-21 0 0Z"/>
+                <path id="petal-vein" d="M0-7 C-2-45-18-108-38-157"/>
+                <path id="leaf-shape" d="M0 0 C-24-67-116-104-185-72 C-163-14-75 29 0 0Z"/>
+                <path id="stamen" d="M0-27 C3-35-2-41 0-48" />
+            </defs>
+
+            <g class="side-plant side-left" transform="translate(118 466) scale(.43)" aria-hidden="true">
+                <path class="side-stem" d="M0 0 C-17 130 17 285 0 700"/>
+                <g class="side-leaf" transform="translate(0 310) rotate(165) scale(.52)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31 M-107-55l-31-20"/>
+                </g>
+                <g class="side-leaf" transform="translate(2 470) rotate(-8) scale(.4)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31"/>
+                </g>
+                <g class="side-leaf" transform="translate(0 570) rotate(165) scale(.34)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72"/>
+                </g>
+                <g class="side-head">
+                    <g class="side-petals">
+                        <use href="#petal-shape" transform="rotate(0)"/>
+                        <use href="#petal-shape" transform="rotate(45)"/>
+                        <use href="#petal-shape" transform="rotate(90)"/>
+                        <use href="#petal-shape" transform="rotate(135)"/>
+                        <use href="#petal-shape" transform="rotate(180)"/>
+                        <use href="#petal-shape" transform="rotate(225)"/>
+                        <use href="#petal-shape" transform="rotate(270)"/>
+                        <use href="#petal-shape" transform="rotate(315)"/>
+                    </g>
+                    <circle class="side-heart" r="20"/>
+                    <circle class="side-heart-center" r="7"/>
+                </g>
+            </g>
+            <g class="side-plant side-right" transform="translate(448 498) scale(.37)" aria-hidden="true">
+                <path class="side-stem" d="M0 0 C18 130 -16 285 0 700"/>
+                <g class="side-leaf" transform="translate(0 300) rotate(170) scale(.48)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31"/>
+                </g>
+                <g class="side-leaf" transform="translate(-2 462) rotate(-7) scale(.42)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31"/>
+                </g>
+                <g class="side-leaf" transform="translate(0 562) rotate(170) scale(.33)">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72"/>
+                </g>
+                <g class="side-head">
+                    <g class="side-petals">
+                        <use href="#petal-shape" transform="rotate(0)"/>
+                        <use href="#petal-shape" transform="rotate(45)"/>
+                        <use href="#petal-shape" transform="rotate(90)"/>
+                        <use href="#petal-shape" transform="rotate(135)"/>
+                        <use href="#petal-shape" transform="rotate(180)"/>
+                        <use href="#petal-shape" transform="rotate(225)"/>
+                        <use href="#petal-shape" transform="rotate(270)"/>
+                        <use href="#petal-shape" transform="rotate(315)"/>
+                    </g>
+                    <circle class="side-heart" r="20"/>
+                    <circle class="side-heart-center" r="7"/>
+                </g>
+            </g>
+            <g class="plant">
+                <path class="stem" d="M280 345 C265 428 307 526 281 798"/>
+                <g class="branch branch-left">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31 M-107-55l-31-20 M-54-29l-13-30"/>
+                    <circle class="dew-drop" cx="-121" cy="-72" r="4"/>
+                </g>
+                <g class="branch branch-right">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31 M-107-55l-31-20 M-54-29l-13-30"/>
+                    <circle class="dew-drop" cx="-121" cy="-72" r="4"/>
+                </g>
+                <g class="branch branch-high">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31 M-107-55l-31-20"/>
+                </g>
+                <g class="branch branch-low">
+                    <use href="#leaf-shape" class="leaf-blade"/>
+                    <path class="leaf-vein" d="M-5-3 C-65-31-119-61-171-72 M-72-38l-22-31"/>
+                </g>
+                <g class="bloom">
+                    <g transform="translate(280 345)">
+                    <g class="petal-layer outer-layer">
+                        <use href="#petal-shape" transform="rotate(0)"/>
+                        <use href="#petal-shape" transform="rotate(30)"/>
+                        <use href="#petal-shape" transform="rotate(60)"/>
+                        <use href="#petal-shape" transform="rotate(90)"/>
+                        <use href="#petal-shape" transform="rotate(120)"/>
+                        <use href="#petal-shape" transform="rotate(150)"/>
+                        <use href="#petal-shape" transform="rotate(180)"/>
+                        <use href="#petal-shape" transform="rotate(210)"/>
+                        <use href="#petal-shape" transform="rotate(240)"/>
+                        <use href="#petal-shape" transform="rotate(270)"/>
+                        <use href="#petal-shape" transform="rotate(300)"/>
+                        <use href="#petal-shape" transform="rotate(330)"/>
+                    </g>
+                    <g class="petal-layer middle-layer" transform="scale(.78)">
+                        <use href="#petal-shape" transform="rotate(15)"/>
+                        <use href="#petal-shape" transform="rotate(51)"/>
+                        <use href="#petal-shape" transform="rotate(87)"/>
+                        <use href="#petal-shape" transform="rotate(123)"/>
+                        <use href="#petal-shape" transform="rotate(159)"/>
+                        <use href="#petal-shape" transform="rotate(195)"/>
+                        <use href="#petal-shape" transform="rotate(231)"/>
+                        <use href="#petal-shape" transform="rotate(267)"/>
+                        <use href="#petal-shape" transform="rotate(303)"/>
+                        <use href="#petal-shape" transform="rotate(339)"/>
+                    </g>
+                    <g class="petal-layer inner-layer" transform="scale(.56)">
+                        <use href="#petal-shape" transform="rotate(0)"/>
+                        <use href="#petal-shape" transform="rotate(45)"/>
+                        <use href="#petal-shape" transform="rotate(90)"/>
+                        <use href="#petal-shape" transform="rotate(135)"/>
+                        <use href="#petal-shape" transform="rotate(180)"/>
+                        <use href="#petal-shape" transform="rotate(225)"/>
+                        <use href="#petal-shape" transform="rotate(270)"/>
+                        <use href="#petal-shape" transform="rotate(315)"/>
+                    </g>
+                    <g class="petal-layer heart-layer" transform="scale(.34)">
+                        <use href="#petal-shape" transform="rotate(22)"/>
+                        <use href="#petal-shape" transform="rotate(82)"/>
+                        <use href="#petal-shape" transform="rotate(142)"/>
+                        <use href="#petal-shape" transform="rotate(202)"/>
+                        <use href="#petal-shape" transform="rotate(262)"/>
+                        <use href="#petal-shape" transform="rotate(322)"/>
+                    </g>
+                    <g class="petal-veins" aria-hidden="true">
+                        <use href="#petal-vein" transform="rotate(0)"/>
+                        <use href="#petal-vein" transform="rotate(60)"/>
+                        <use href="#petal-vein" transform="rotate(120)"/>
+                        <use href="#petal-vein" transform="rotate(180)"/>
+                        <use href="#petal-vein" transform="rotate(240)"/>
+                        <use href="#petal-vein" transform="rotate(300)"/>
+                    </g>
+                    <circle class="flower-heart" r="34"/>
+                    <g class="stamens">
+                        <use href="#stamen" transform="rotate(0)"/>
+                        <use href="#stamen" transform="rotate(20)"/>
+                        <use href="#stamen" transform="rotate(40)"/>
+                        <use href="#stamen" transform="rotate(60)"/>
+                        <use href="#stamen" transform="rotate(80)"/>
+                        <use href="#stamen" transform="rotate(100)"/>
+                        <use href="#stamen" transform="rotate(120)"/>
+                        <use href="#stamen" transform="rotate(140)"/>
+                        <use href="#stamen" transform="rotate(160)"/>
+                        <use href="#stamen" transform="rotate(180)"/>
+                        <use href="#stamen" transform="rotate(200)"/>
+                        <use href="#stamen" transform="rotate(220)"/>
+                        <use href="#stamen" transform="rotate(240)"/>
+                        <use href="#stamen" transform="rotate(260)"/>
+                        <use href="#stamen" transform="rotate(280)"/>
+                        <use href="#stamen" transform="rotate(300)"/>
+                        <use href="#stamen" transform="rotate(320)"/>
+                        <use href="#stamen" transform="rotate(340)"/>
+                    </g>
+                    <circle class="heart-center" r="13"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <footer class="caption">
+            <span class="caption-line" aria-hidden="true"></span>
+            <p>Softness is its own kind of strength</p>
+            <span class="caption-note">GROWN UNDER A QUIET SKY</span>
+        </footer>
+    </main>
+    <script>
+        const loginForm = document.querySelector("#login-form");
+        const loginScreen = document.querySelector("#login-screen");
+        const garden = document.querySelector("#garden");
+        const nameInput = document.querySelector("#user-name");
+        const displayName = document.querySelector("#display-name");
+        const exitButton = document.querySelector("#exit-garden");
+
+        nameInput.addEventListener("input", () => nameInput.setCustomValidity(""));
+
+        loginForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = nameInput.value.trim();
+            if (!name) {
+                nameInput.setCustomValidity("Please enter your name.");
+                nameInput.reportValidity();
+                return;
+            }
+
+            nameInput.setCustomValidity("");
+            displayName.textContent = name;
+            loginForm.reset();
+            loginScreen.hidden = true;
+            garden.hidden = false;
+            garden.focus({ preventScroll: true });
+        });
+
+        exitButton.addEventListener("click", () => {
+            garden.hidden = true;
+            loginScreen.hidden = false;
+            nameInput.focus();
+        });
+    </script>
+</body>
+</html>
